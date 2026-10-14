@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS studenthub;
+USE studenthub;
+
+CREATE TABLE IF NOT EXISTS students (
+    student_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(150) NOT NULL UNIQUE,
+    course VARCHAR(100) NOT NULL
+);
